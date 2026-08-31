@@ -27,6 +27,9 @@ function display_message(user, time, message, privateMessage, html = false) {
         classes += "self";
     } else {
         classes += "other";
+        if (user.name === "gamemaster") {
+            classes += " bot";
+        }
     }
 
     if (privateMessage) {
@@ -62,6 +65,9 @@ function display_image(user, time, url, width, height, privateMessage) {
         classes += "self";
     } else {
         classes += "other";
+        if (user.name === "gamemaster") {
+            classes += " bot";
+        }
     }
     if (privateMessage) {
         classes += " private";

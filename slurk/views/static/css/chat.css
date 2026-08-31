@@ -115,9 +115,12 @@ header video {
     display: flex;
 }
 
-.other .message {
+.other .message-box {
     border-top-left-radius: 0;
-    box-shadow: -1px 2px 0 #CECDCD;
+    box-shadow: -1px 2px 0 #CDE3F7;
+}
+.other.bot .message-box {
+    box-shadow: -1px 2px 0 #F0C892;
 }
 .other:before {
     content: "";
@@ -127,15 +130,24 @@ header video {
     left: 0;
     width: 0;
     height: 0;
-    border: 5px solid #CECDCD;
+    border: 5px solid #CDE3F7;
     border-left-color: transparent;
     border-bottom-color: transparent;
     margin-right: -2px;
 }
+.other.bot:before {
+    border-color: #F0C892;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
 
-.other .message-box {
-    background: #CECDCD;
-    color: #000;
+.other:not(.bot) .message-box {
+    background: #CDE3F7;
+    color: #0B3D66;
+}
+.other.bot .message-box {
+    background: #F0C892;
+    color: #7A4A0E;
 }
 
 .self, .command {
@@ -145,9 +157,9 @@ header video {
 .private .message, .command .message {
     font-style: italic;
 }
-.self .message, .command .message {
+.self .message-box, .command .message-box {
     border-bottom-right-radius: 0;
-    box-shadow: 1px 2px 0 #AbACAF;
+    box-shadow: 1px 2px 0 #DCEEDB;
 }
 .self:after, .command:after {
     content: "";
@@ -157,13 +169,14 @@ header video {
     right: 0;
     width: 0;
     height: 0;
-    border: 5px solid #AbACAF;
+    border: 5px solid #DCEEDB;
     border-right-color: transparent;
     border-top-color: transparent;
     margin-left: -2px;
 }
 .self .message-box, .command .message-box {
-    background: #AbACAF;
+    background: #DCEEDB;
+    color: #1B4332;
 }
 
 .message-box {
@@ -180,7 +193,7 @@ header video {
 .message-box span {
     font-size: 13px;
     margin: 0 0 2px 0;
-    color: #333;
+    /*color: #333; */
 }
 
 .message-box time {

@@ -1,0 +1,41 @@
+{
+  "task": {
+    "type": "chat"
+  },
+  "title": "Chatroom",
+  "subtitle": "Beschreiben Sie bitte das markierte Objekt mit genau einem Wort",
+  "html": [
+    {
+      "layout-type": "div",
+      "id": "game-area",
+      "css": {
+        "display": "grid",
+        "grid-template-columns": "repeat(3, 1fr)",
+        "grid-template-rows": "repeat(3, 1fr)",
+        "gap": "4px",
+        "padding": "4px",
+        "box-sizing": "border-box",
+        "height": "100%",
+        "overflow": "hidden"
+      },
+      "layout-content": [
+        { "layout-type": "image", "id": "t0", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t1", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t2", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t3", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t4", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t5", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t6", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t7", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } },
+        { "layout-type": "image", "id": "t8", "css": { "width": "100%", "height": "100%", "object-fit": "contain", "border": "1px solid #ccc", "border-radius": "4px", "background": "#fff", "box-sizing": "border-box" } }
+      ]
+    }
+  ],
+  "scripts": {
+    "incoming-text": "display-text",
+    "incoming-image": "display-image",
+    "submit-message": "send-message",
+    "print-history": "plain-history"
+  },
+  "show_latency": false
+}

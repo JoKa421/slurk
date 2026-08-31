@@ -22,6 +22,8 @@
     <script type="text/javascript" src="{{ url_for('static', filename='js/layout.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/splitter.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/text.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/keepalive.js') }}"></script>
+    <!--<script type="text/javascript" src="{{ url_for('static', filename='js/tangram_game.js') }}"></script>/--> 
     <script>const TOKEN = "{{ token }}";</script>
     <script type="text/javascript" charset="utf-8" id="custom-scripts"></script>
     <style id="custom-styles"></style>
@@ -44,7 +46,7 @@
 	<div id="typing"></div>
     </div>
     <div id="type-area" style="display: none;">
-        <textarea id="text" size="80" placeholder="Enter your message here!" readonly="readonly"></textarea><br><br>
+        <textarea id="text" size="80" placeholder="Enter message" readonly="readonly"></textarea><br><br>
     </div>
 </body>
 

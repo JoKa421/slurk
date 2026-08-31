@@ -1,0 +1,12 @@
+{
+  "name": "tangram_task",
+  "description": "Tangram description chat_game with strict turn taking",
+  "layout": "chat_game.json",
+  "users": 2,
+  "bots": [
+    {
+      "name": "strict_turn_taking_tangram_bot",
+      "permissions": "bot_permissions.json"
+    }
+  ]
+}
